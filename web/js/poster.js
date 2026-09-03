@@ -186,11 +186,7 @@
     return {
       bg: COLORS.accentSoft, border: COLORS.accent,
       blocks: [
-        { font: LAYOUT.hiddenTitleFont, bold: true, color: COLORS.accentText, text: '隐藏人格未解锁' },
-        { font: LAYOUT.hiddenLine2Font, bold: false, color: COLORS.textSub,
-          text: '第37题你选择了「' + result.bonusText + '」' },
-        { font: LAYOUT.hiddenTipFont, bold: false, color: COLORS.textSub,
-          text: '极端作答并达成指定星级组合，才能触发 4 种隐藏人格之一' }
+        { font: LAYOUT.hiddenTitleFont, bold: true, color: COLORS.accentText, text: '隐藏人格未解锁' }
       ]
     };
   }
