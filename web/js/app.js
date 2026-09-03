@@ -39,6 +39,17 @@
     });
   }
 
+  // 数据里的颜色是 [r,g,b] 数组，转成 CSS 可用的 rgb(...) 字符串
+  function cssColor(c) {
+    return { main: 'rgb(' + c.main.join(',') + ')', soft: 'rgb(' + c.soft.join(',') + ')' };
+  }
+
+  function titleHtml() {
+    return P.titleParts().map(function (part) {
+      return '<span style="color:' + part.color + '">' + escapeHtml(part.text) + '</span>';
+    }).join('');
+  }
+
   function pad2(n) { return n < 10 ? '0' + n : '' + n; }
 
   function today() {
@@ -141,7 +152,7 @@
       hidden: hidden,
       bonusKey: bonusKey,
       bonusText: bonusQ.chosen ? bonusQ.chosen.text : '',
-      groupColor: D.groupColors[profile.group] || D.defaultGroupColor,
+      groupColor: cssColor(D.groupColors[profile.group] || D.defaultGroupColor),
       dimensions: D.dimensions,
       date: today(),
       disclaimer: DISCLAIMER
@@ -248,7 +259,7 @@
     var html = '';
 
     html += '<div class="r-title" style="left:' + L.innerX + 'px;top:' + L.headerY + 'px">' +
-      'ICBC-TI 人格测试报告</div>';
+      titleHtml() + '</div>';
     html += '<div class="r-date" style="right:78px;top:' + L.headerY + 'px">' + r.date + '</div>';
     html += '<div class="r-divider" style="left:' + L.innerX + 'px;top:' + L.dividerY +
       'px;width:' + L.innerW + 'px"></div>';

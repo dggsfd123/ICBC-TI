@@ -19,6 +19,21 @@
     shadow: 'rgba(26,32,56,0.11)'
   };
 
+  // 报告标题配色：ICBC-TI 逐字母按红/黄/绿/蓝循环，中文用主色红
+  var TITLE_TEXT = 'ICBC-TI';
+  var TITLE_SUFFIX = ' 人格测试报告';
+  var TITLE_COLORS = ['#C4122D', '#D98A0B', '#1A8F5C', '#2866D6'];
+  var TITLE_SUFFIX_COLOR = '#C4122D';
+
+  function titleParts() {
+    var parts = [];
+    for (var i = 0; i < TITLE_TEXT.length; i++) {
+      parts.push({ text: TITLE_TEXT.charAt(i), color: TITLE_COLORS[i % TITLE_COLORS.length] });
+    }
+    parts.push({ text: TITLE_SUFFIX, color: TITLE_SUFFIX_COLOR });
+    return parts;
+  }
+
   // 与 Windows 版报告页一致的布局坐标（逻辑画布 1080 宽）
   var LAYOUT = {
     width: 1080,
@@ -270,8 +285,12 @@
     // 头部
     ctx.textAlign = 'left';
     setFont(ctx, L.titleFont, true);
-    ctx.fillStyle = COLORS.text;
-    ctx.fillText('ICBC-TI 人格测试报告', L.innerX, L.headerY);
+    var tx = L.innerX;
+    titleParts().forEach(function (part) {
+      ctx.fillStyle = part.color;
+      ctx.fillText(part.text, tx, L.headerY);
+      tx += ctx.measureText(part.text).width;
+    });
     setFont(ctx, L.dateFont, false);
     ctx.fillStyle = COLORS.textLight;
     ctx.textAlign = 'right';
@@ -385,6 +404,7 @@
     FONT_STACK: FONT_STACK,
     computeLayout: computeLayout,
     hiddenBlocks: hiddenBlocks,
+    titleParts: titleParts,
     draw: draw
   };
 })(window);
