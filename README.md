@@ -2,7 +2,7 @@
 
 一款轻松有趣的职场人格测试小游戏。通过 37 道职场情境题，测出你在「工行 16 型人格」中的归属，并隐藏 1 道彩蛋题，有机会解锁 4 种隐藏人格。
 - Windows版本：https://pan.baidu.com/s/1O_LyA2oz__BPNVCOtepQaw?pwd=icbc 提取码: icbc
-- 网页端：https://dggsfd123.github.io/ICBC-TI/web/index.html
+- 网页端：https://dggsfd123.github.io/ICBC-TI
 
 ## 功能简介
 
