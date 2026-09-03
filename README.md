@@ -4,7 +4,8 @@
 - Windows版本：https://pan.baidu.com/s/1O_LyA2oz__BPNVCOtepQaw?pwd=icbc 提取码: icbc
 - 网页端：https://dggsfd123.github.io/ICBC-TI
 
-<img width="1162" height="1162" alt="封面" src="https://github.com/user-attachments/assets/a4b0ca60-c8e8-416b-8c57-a5147e15120a" />
+<img width="1225" height="1226" alt="icbcti" src="https://github.com/user-attachments/assets/b72bb1e6-8403-4cab-9b0e-a16b0e6e6614" />
+
 
 ## 功能简介
 
