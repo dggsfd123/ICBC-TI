@@ -4,6 +4,8 @@
 - Windows版本：https://pan.baidu.com/s/1O_LyA2oz__BPNVCOtepQaw?pwd=icbc 提取码: icbc
 - 网页端：https://dggsfd123.github.io/ICBC-TI
 
+<img width="1162" height="1162" alt="封面" src="https://github.com/user-attachments/assets/a4b0ca60-c8e8-416b-8c57-a5147e15120a" />
+
 ## 功能简介
 
 - 37 道情境题，全程点击操作，约 3 分钟完成
