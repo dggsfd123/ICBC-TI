@@ -1,0 +1,15 @@
+# Python
+__pycache__/
+*.py[cod]
+
+# PyInstaller 中间产物与打包结果（exe 建议放 GitHub Releases）
+build/
+dist/
+*.spec
+
+# 桌面版运行产物
+windows/报告导出/
+
+# 系统文件
+.DS_Store
+Thumbs.db

@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no, viewport-fit=cover">
+<title>ICBC-TI 人格测试 · 工行总行16型人格</title>
+<meta name="description" content="37 道职场情境题，测出你在工行的隐藏人格。">
+<meta property="og:title" content="ICBC-TI 人格测试 · 工行总行16型人格">
+<meta property="og:description" content="37 道职场情境题，测出你的隐藏人格。">
+<meta property="og:image" content="images/未来行长.png">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<div id="viewport">
+  <div id="stage">
+
+    <!-- 开始页 -->
+    <section id="screen-start" class="screen">
+      <div class="avatar-row" id="avatar-row"></div>
+      <div class="start-card">
+        <div class="start-title">ICBC-TI</div>
+        <div class="start-sub">工行总行 16 型人格测试</div>
+        <div class="start-desc">37 道职场情境题，测出你的隐藏人格</div>
+        <div class="chip-row" id="chip-row"></div>
+        <div class="start-divider"></div>
+        <div class="start-tips">
+          全程点击操作，选完自动进入下一题<br>
+          约 3 分钟，36 道情境题 + 1 道隐藏人格彩蛋题<br>
+          题目与选项均已随机打乱，放心凭直觉选择
+        </div>
+        <button class="btn-start" id="btn-start">开始测试</button>
+      </div>
+      <div class="disclaimer"></div>
+    </section>
+
+    <!-- 答题页 -->
+    <section id="screen-quiz" class="screen">
+      <div class="q-top">
+        <div class="q-meta">
+          <span class="q-index" id="q-index">第 1 / 37 题</span>
+          <span id="q-done">已完成 0 / 37</span>
+        </div>
+        <div class="bar"><div id="q-progress-fill"></div></div>
+      </div>
+
+      <div class="qcard">
+        <div class="pill-row">
+          <span class="pill" id="q-index-pill">第 1 / 37 题</span>
+          <span class="pill pill-gold" id="q-tag">隐藏人格彩蛋</span>
+        </div>
+        <div id="q-text"></div>
+      </div>
+
+      <div class="q-options" id="q-options"></div>
+      <div class="q-hint" id="q-hint">点击选项即刻作答，选择后自动进入下一题</div>
+      <div class="disclaimer"></div>
+    </section>
+
+    <!-- 报告页 -->
+    <section id="screen-report" class="screen">
+      <div id="report-card"></div>
+      <div class="report-actions">
+        <button class="btn btn-primary" id="btn-export">导出报告</button>
+        <button class="btn btn-ghost" id="btn-again">再测一次</button>
+      </div>
+      <div class="disclaimer"></div>
+    </section>
+
+  </div>
+</div>
+
+<!-- 海报预览 / 保存 -->
+<div id="share-layer">
+  <img id="share-img" alt="ICBC-TI 人格报告">
+  <div class="share-actions">
+    <button class="btn btn-primary" id="btn-save">下载图片</button>
+    <button class="btn btn-ghost" id="btn-share-close">关闭</button>
+  </div>
+  <div class="share-tip">微信内若无法下载，请长按上方图片保存到相册</div>
+</div>
+
+<div id="toast"></div>
+
+<script src="js/data.js"></script>
+<script src="js/poster.js"></script>
+<script src="js/app.js"></script>
+</body>
+</html>
