@@ -184,12 +184,12 @@
       };
     }
     return {
-      bg: COLORS.softFill, border: COLORS.optionBorder,
+      bg: COLORS.accentSoft, border: COLORS.accent,
       blocks: [
-        { font: LAYOUT.hiddenTitleFont, bold: true, color: COLORS.textSub, text: '隐藏人格未解锁' },
+        { font: LAYOUT.hiddenTitleFont, bold: true, color: COLORS.accentText, text: '隐藏人格未解锁' },
         { font: LAYOUT.hiddenLine2Font, bold: false, color: COLORS.textSub,
           text: '第37题你选择了「' + result.bonusText + '」' },
-        { font: LAYOUT.hiddenTipFont, bold: false, color: COLORS.textLight,
+        { font: LAYOUT.hiddenTipFont, bold: false, color: COLORS.textSub,
           text: '极端作答并达成指定星级组合，才能触发 4 种隐藏人格之一' }
       ]
     };
@@ -289,7 +289,7 @@
 
     // 人格图
     var imgX = (L.width - L.imgSize) / 2;
-    return Promise.resolve(getImage(hidden ? hidden.image : p.image)).then(function (img) {
+    return Promise.resolve(getImage(hidden ? hidden.file : p.file)).then(function (img) {
       ctx.save();
       roundRectPath(ctx, imgX, L.imgY, L.imgSize, L.imgSize, 28);
       ctx.clip();

@@ -8,7 +8,9 @@
   var P = window.Poster;
   var L = P.LAYOUT;
   var DISCLAIMER = 'ICBC-TI仅供娱乐，无参考意义。';
-  var AVATARS = ['未来行长.png', 'PPT战略刺客.png', '资源召唤师.png', '兜底老黄牛.png'];
+  // 开始页用 4 张觉醒图（与 Windows 版一致）
+  var AVATARS = [D.personalities['PSGD'].file, D.personalities['PCGL'].file,
+    D.personalities['ASVD'].file, D.personalities['ACVL'].file];
   var FEEDBACK_DELAY = 430;
   var LETTERS = 'ABCDEFGH';
 
@@ -53,13 +55,13 @@
   }
 
   var imageCache = {};
-  function loadImage(name) {
-    if (imageCache[name]) return Promise.resolve(imageCache[name]);
+  function loadImage(file) {
+    if (imageCache[file]) return Promise.resolve(imageCache[file]);
     return new Promise(function (resolve, reject) {
       var img = new Image();
-      img.onload = function () { imageCache[name] = img; resolve(img); };
-      img.onerror = function () { reject(new Error(name)); };
-      img.src = 'images/' + encodeURIComponent(name);
+      img.onload = function () { imageCache[file] = img; resolve(img); };
+      img.onerror = function () { reject(new Error(file)); };
+      img.src = 'images/' + file;
     });
   }
 
@@ -150,8 +152,8 @@
 
   function renderStart() {
     var row = $('avatar-row');
-    row.innerHTML = AVATARS.map(function (n) {
-      return '<img class="avatar" src="images/' + encodeURIComponent(n) + '" alt="">';
+    row.innerHTML = AVATARS.map(function (f) {
+      return '<img class="avatar" src="images/' + f + '" alt="">';
     }).join('');
 
     $('chip-row').innerHTML = D.dimensions.map(function (d) {
@@ -241,7 +243,7 @@
     var gc = r.groupColor;
     var plan = P.computeLayout(r);
     var name = r.hidden ? r.hidden.name : p.name;
-    var imgName = r.hidden ? r.hidden.image : p.image;
+    var imgFile = r.hidden ? r.hidden.file : p.file;
     var cx = L.width / 2;
     var html = '';
 
@@ -250,7 +252,7 @@
     html += '<div class="r-date" style="right:78px;top:' + L.headerY + 'px">' + r.date + '</div>';
     html += '<div class="r-divider" style="left:' + L.innerX + 'px;top:' + L.dividerY +
       'px;width:' + L.innerW + 'px"></div>';
-    html += '<img class="r-img" src="images/' + encodeURIComponent(imgName) +
+    html += '<img class="r-img" src="images/' + imgFile +
       '" style="left:' + ((L.width - L.imgSize) / 2) + 'px;top:' + L.imgY +
       'px;width:' + L.imgSize + 'px;height:' + L.imgSize + 'px" alt="">';
     html += '<div class="r-code" style="top:' + L.codeY + 'px;color:' + gc.main + '">' +
@@ -378,13 +380,13 @@
     });
 
     // 预加载：先加载开始页头像，再后台加载其余人格图
-    AVATARS.forEach(function (n) { loadImage(n).catch(function () {}); });
+    AVATARS.forEach(function (f) { loadImage(f).catch(function () {}); });
     setTimeout(function () {
       Object.keys(D.personalities).forEach(function (code) {
-        loadImage(D.personalities[code].image).catch(function () {});
+        loadImage(D.personalities[code].file).catch(function () {});
       });
       Object.keys(D.hidden).forEach(function (k) {
-        loadImage(D.hidden[k].image).catch(function () {});
+        loadImage(D.hidden[k].file).catch(function () {});
       });
     }, 800);
 

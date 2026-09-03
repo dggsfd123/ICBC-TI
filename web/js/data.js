@@ -579,7 +579,8 @@ window.ICBCTI_DATA = {
       "skill": "宏大叙事构建",
       "ultimate": "“这个事情，我们不妨再往前想一步。”",
       "scene": "在茶水间给实习生规划十年蓝图。",
-      "line": "“格局打开。”"
+      "line": "“格局打开。”",
+      "file": "p01.png"
     },
     "ACVL": {
       "name": "PPT战略刺客",
@@ -589,7 +590,8 @@ window.ICBCTI_DATA = {
       "skill": "黑话连篇输出",
       "ultimate": "“我重新排了一版。”",
       "scene": "用炫酷的飞入动画掩盖没数据的尴尬。",
-      "line": "“底层逻辑没通，我先搭个框架。”"
+      "line": "“底层逻辑没通，我先搭个框架。”",
+      "file": "p02.png"
     },
     "ACGD": {
       "name": "WPS特种兵",
@@ -599,7 +601,8 @@ window.ICBCTI_DATA = {
       "skill": "多线程写材料",
       "ultimate": "“把原文件发我。”",
       "scene": "Ctrl+C/V残影连击。",
-      "line": "“这都不用手点。”"
+      "line": "“这都不用手点。”",
+      "file": "p03.png"
     },
     "ACGL": {
       "name": "漏洞感知者",
@@ -609,7 +612,8 @@ window.ICBCTI_DATA = {
       "skill": "硬刚不合理KPI",
       "ultimate": "“这个这么做有很大风险。”",
       "scene": "全员开始卷，他默默合上电脑。",
-      "line": "“天塌了有行长顶着。”"
+      "line": "“天塌了有行长顶着。”",
+      "file": "p09.png"
     },
     "ASVD": {
       "name": "资源召唤师",
@@ -619,7 +623,8 @@ window.ICBCTI_DATA = {
       "skill": "跨部门无缝摇人",
       "ultimate": "“我帮你问问。”",
       "scene": "一个电话，召唤出三个部门为他加班。",
-      "line": "“我打过招呼了，你直接OA拉群。”"
+      "line": "“我打过招呼了，你直接OA拉群。”",
+      "file": "p12.png"
     },
     "ASVL": {
       "name": "人形态工晓伴",
@@ -629,7 +634,8 @@ window.ICBCTI_DATA = {
       "skill": "自动补充情绪价值",
       "ultimate": "“消消气，来先喝杯瑞幸。”",
       "scene": "处长发火时精准递茶降温。",
-      "line": "“太牛啦太牛啦。”"
+      "line": "“太牛啦太牛啦。”",
+      "file": "p05.png"
     },
     "ASGD": {
       "name": "部门粘合剂",
@@ -639,7 +645,8 @@ window.ICBCTI_DATA = {
       "skill": "薛定谔的推进",
       "ultimate": "“大家一起对一下，我来做会议纪要。”",
       "scene": "用废话文学让吵架双方都觉得自己赢了。",
-      "line": "“这个都可以协调。”"
+      "line": "“这个都可以协调。”",
+      "file": "p13.png"
     },
     "ASGL": {
       "name": "人形态智涌",
@@ -649,7 +656,8 @@ window.ICBCTI_DATA = {
       "skill": "秒回OA消息",
       "ultimate": "“我会用最直白的方式回复你。”",
       "scene": "用3000字长文回复新人小白问题。",
-      "line": "“根据XXX号文，你应该这么做。”"
+      "line": "“根据XXX号文，你应该这么做。”",
+      "file": "p06.png"
     },
     "PCVD": {
       "name": "工位防御塔",
@@ -659,7 +667,8 @@ window.ICBCTI_DATA = {
       "skill": "上班戴耳机听音乐装聋",
       "ultimate": "“这个是不是要再确认一下？”",
       "scene": "办公桌文件筑起视线高墙",
-      "line": "“我有个急活儿，你走OA提流程吧。”"
+      "line": "“我有个急活儿，你走OA提流程吧。”",
+      "file": "p10.png"
     },
     "PCVL": {
       "name": "退堂鼓艺术家",
@@ -669,7 +678,8 @@ window.ICBCTI_DATA = {
       "skill": "列举100个风险",
       "ultimate": "“要不我们再研究研究？”",
       "scene": "需求刚念完标题已经准备申请延期。",
-      "line": "“风险太大了，建议暂缓处理”"
+      "line": "“风险太大了，建议暂缓处理”",
+      "file": "p15.png"
     },
     "PCGD": {
       "name": "e企邮轰炸机",
@@ -679,7 +689,8 @@ window.ICBCTI_DATA = {
       "skill": "工作要留痕",
       "ultimate": "“再次提醒。”",
       "scene": "项目没推进，邮件已经往返37封。",
-      "line": "“烦请于今日下班前反馈。”"
+      "line": "“烦请于今日下班前反馈。”",
+      "file": "p04.png"
     },
     "PCGL": {
       "name": "17:30下班守门员",
@@ -689,7 +700,8 @@ window.ICBCTI_DATA = {
       "skill": "千手观音收拾背包",
       "ultimate": "“今天先到这儿。”",
       "scene": "在周会上拿《劳动法》给领导普法。",
-      "line": "“明天再说。”"
+      "line": "“明天再说。”",
+      "file": "p16.png"
     },
     "PSVD": {
       "name": "会议室DJ",
@@ -699,7 +711,8 @@ window.ICBCTI_DATA = {
       "skill": "掌控会议进程",
       "ultimate": "“我简单补充两句。”",
       "scene": "主持人说“最后还有一个问题”，结果一发言打开了第二轮话题。",
-      "line": "“我再展开一下。”"
+      "line": "“我再展开一下。”",
+      "file": "p07.png"
     },
     "PSVL": {
       "name": "会议太极宗师",
@@ -709,7 +722,8 @@ window.ICBCTI_DATA = {
       "skill": "推脱需求于无形",
       "ultimate": "“原则上没有问题，后续再沟通。”",
       "scene": "会议开了一下午，锅甩到了隔壁处室。",
-      "line": "“我们保持沟通。”"
+      "line": "“我们保持沟通。”",
+      "file": "p08.png"
     },
     "PSGD": {
       "name": "兜底老黄牛",
@@ -719,7 +733,8 @@ window.ICBCTI_DATA = {
       "skill": "默默扫清遗留",
       "ultimate": "“没事，我来弄。”",
       "scene": "默默修好了三年前离职同事留下的bug。",
-      "line": "“问题不大。”"
+      "line": "“问题不大。”",
+      "file": "p11.png"
     },
     "PSGL": {
       "name": "工位炒股战神",
@@ -729,7 +744,8 @@ window.ICBCTI_DATA = {
       "skill": "Alt+Tab极速切屏",
       "ultimate": "“去厕所找个坑操作一下。”",
       "scene": "对着K线抱头痛哭，同事以为是工作出了问题。",
-      "line": "“大盘又绿了，这班得倒贴钱。”"
+      "line": "“大盘又绿了，这班得倒贴钱。”",
+      "file": "p14.png"
     }
   },
   "hidden": {
@@ -743,7 +759,8 @@ window.ICBCTI_DATA = {
         "blame": 5,
         "slack": 1
       },
-      "desc": "世界末日都无法阻止你拉磨。"
+      "desc": "世界末日都无法阻止你拉磨。",
+      "file": "p19.png"
     },
     "B": {
       "name": "17:30守门员觉醒",
@@ -755,7 +772,8 @@ window.ICBCTI_DATA = {
         "blame": 5,
         "slack": 5
       },
-      "desc": "末日可以延期，下班不能。"
+      "desc": "末日可以延期，下班不能。",
+      "file": "p20.png"
     },
     "C": {
       "name": "资源召唤师觉醒",
@@ -767,7 +785,8 @@ window.ICBCTI_DATA = {
         "blame": 1,
         "slack": 1
       },
-      "desc": "世界都要毁灭了，你还在拉群。"
+      "desc": "世界都要毁灭了，你还在拉群。",
+      "file": "p18.png"
     },
     "D": {
       "name": "PPT战略刺客觉醒",
@@ -779,7 +798,8 @@ window.ICBCTI_DATA = {
         "blame": 1,
         "slack": 5
       },
-      "desc": "末日之前，不妨再画个大饼。"
+      "desc": "末日之前，不妨再画个大饼。",
+      "file": "p17.png"
     }
   },
   "groupColors": {
