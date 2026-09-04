@@ -34,4 +34,4 @@
 
 ## 说明
 
-本测试仅供娱乐，结果无参考意义。
+本测试仅供娱乐，结果无参考意义。Vibe Coding开发使用CodeBuddy & Hy4 preview， ♥ ICBC ♥ Tencent！
